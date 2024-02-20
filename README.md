@@ -18,7 +18,7 @@ This is the second SQL homework in CMC's CSCI143: Big Data class.
     1. Then run the following commands to populate your new repo from this repo.
 
         ```
-        $ git clone https://gitlab.com/mikeizbicki/pagila-hw2
+        $ git clone https://gitlab.com/ben-smith23/pagila-hw2
         $ cd pagila-hw2
         $ git remote add upstream <url_of_your_repo>
         $ git push upstream master
@@ -30,4 +30,4 @@ This is the second SQL homework in CMC's CSCI143: Big Data class.
         > The `.github` folder in this repo already has the appropriate github actions defined,
         > and you should not have to modify any of these files.
 
-1. Next, complete the problems in the `sql` folder just like you did for the [pagila-hw](https://github.com/mikeizbicki/pagila-hw) assignment.
+1. Next, complete the problems in the `sql` folder just like you did for the [pagila-hw](https://github.com/ben-smith23/pagila-hw) assignment.

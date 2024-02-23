@@ -7,7 +7,15 @@
  * Inner join the queries above.
  */
 
-SELECT title
-FROM (SELECT title
+SELECT a.title
+FROM (
+    SELECT title
     FROM film
-    WHERE f.special_features @> ARRAY['Behind the Scenes']
+    WHERE special_features @> ARRAY['Behind the Scenes']
+) AS a
+INNER JOIN (
+    SELECT title
+    FROM film
+    WHERE special_features @> ARRAY['Trailers']
+) AS b ON a.title = b.title
+ORDER BY a.title;
